@@ -1,8 +1,7 @@
 import React from 'react';
 
-const ListItem = (id, text, onRemoveTodo) => (
-  <>
-  <li key={id}>
+const Item = (id, text, onRemoveTodo) => (
+  <li>
         {text}
         <button 
           onClick={() => onRemoveTodo(id)} 
@@ -10,8 +9,7 @@ const ListItem = (id, text, onRemoveTodo) => (
             Remove
         </button>
       </li>
-  </>
 
 )
 
-export default ListItem;
+export default Item;
