@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Item = (id, text, onRemoveTodo) => (
+const Item = ({ id, text, onRemoveTodo }) => (
   <li>
         {text}
         <button 
